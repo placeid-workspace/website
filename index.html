@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <audio id="bg" src="assets/sound.mp3" loop preload="auto" playsinline></audio>
+
+    <div class="volbox">
+        <input id="vol" type="range" min="0" max="100" value="50">
+    </div>
+
     <div class="container">
         <nav class="navbar">
             <div class="nav-brand">
@@ -48,6 +54,11 @@
             </div>
         </main>
 
+        <main class="projects" id="projects">
+            <h2 class="projects-title">My GitHub Projects</h2>
+            <div class="projects-grid" id="projects-grid"></div>
+        </main>
+
         <div id="copy-notification" class="notification">
             <span>copied</span>
         </div>
@@ -55,6 +66,4 @@
 
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>
-
